@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <div className=" min-h-screen w-screen relative overflow-hidden">
+      <div className=" min-h-screen w-screen  relative overflow-hidden">
         <HeroSection />
         <InfoSection />
         <SolutionSection />
