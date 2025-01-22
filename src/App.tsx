@@ -1,5 +1,6 @@
 import HeroSection from "./components/HeroSection"
 import InfoSection from "./components/InfoSection"
+import LgpdSection from "./components/LgpdSection"
 import SolutionSection from "./components/SolutionSection"
 
 
@@ -13,6 +14,7 @@ function App() {
         <HeroSection />
         <InfoSection />
         <SolutionSection />
+        <LgpdSection />
       </div>
     </>
   )
