@@ -2,7 +2,8 @@
 
 # Pesquisa Ativa Negócios
 
-Criado por : Gabriel A. Munck P. da Cruz
+Criado por : Gabriel A. Munck P. da Cruz.
+
 Landing page moderna desenvolvida para apresentar serviços de pesquisa ativa para negócios, utilizando as mais recentes tecnologias web.
 
 ## 🚀 Tecnologias Utilizadas
@@ -62,7 +63,7 @@ O projeto utiliza Tailwind CSS para estilização, oferecendo:
 
  ## 📱 Dispositivos Compatíveis
  O projeto foi desenvolvido para ser compatível com os seguintes dispositivos:
- 
+
 - Dispositivos móveis
 - Tablets
 - Desktops
