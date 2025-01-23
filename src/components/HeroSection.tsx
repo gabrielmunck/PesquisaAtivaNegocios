@@ -6,15 +6,17 @@ function HeroSection() {
     };
 
     return (
-        <motion.main
+        <main
             id="home"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
             className="bg-gradient-to-r from-blue-600 to-blue-800 min-h-[600px]"
         >
-            <div className="max-w-7xl mx-auto">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1 }}
+                className="max-w-7xl mx-auto"
+            >
                 <article className="flex flex-col md:flex-row py-28 gap-2">
                     <div className="flex flex-col w-full md:w-[80%] justify-center items-center space-y-8 px-4 sm:px-6 lg:px-8">
                         <h3 className="text-4xl md:text-7xl font-bold text-white leading-snug">
@@ -49,8 +51,8 @@ function HeroSection() {
                         />
                     </div>
                 </article>
-            </div>
-        </motion.main>
+            </motion.div>
+        </main>
     );
 }
 

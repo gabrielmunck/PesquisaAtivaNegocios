@@ -2,14 +2,7 @@ import { motion } from "framer-motion";
 
 function InfoSection() {
     return (
-        <motion.main
-            id="sobre"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
-            className="relative"
-        >
+        <motion.main id="sobre" className="relative">
             <div className="absolute w-full h-[800px] bg-gradient-to-r from-blue-600 to-blue-800 clip-path-triangle -z-10"></div>
             <div className="flex w-full justify-center bg-gradient-to-r from-blue-600 to-blue-800 p-8 ">
                 <h2 className="text-white font-bold tracking-wider text-3xl md:text-5xl text-center leading-tight relative">
@@ -18,7 +11,13 @@ function InfoSection() {
                 </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 max-w-7xl mx-auto z-10">
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100 group">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                    className="bg-white rounded-xl p-6 shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100 group"
+                >
                     <h2 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-600 transition-colors">
                         O Pesquisa Ativa é para você que...
                     </h2>
@@ -33,9 +32,15 @@ function InfoSection() {
                             dos clientes.
                         </p>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100 group">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                    className="bg-white rounded-xl p-6 shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100 group"
+                >
                     <h2 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-600 transition-colors">
                         Como faturar mais com o Pesquisa Ativa?
                     </h2>
@@ -48,9 +53,15 @@ function InfoSection() {
                             sucesso a longo prazo
                         </p>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100 group">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                    className="bg-white rounded-xl p-6 shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100 group"
+                >
                     <h2 className="text-2xl font-bold text-gray-800 mb-12 group-hover:text-blue-600 transition-colors">
                         Como economizar com o Pesquisa Ativa?
                     </h2>
@@ -78,9 +89,15 @@ function InfoSection() {
                             </p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100 group">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                    className="bg-white rounded-xl p-6 shadow-lg hover:-translate-y-2 transition-all duration-300 border border-gray-100 group"
+                >
                     <h2 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-600 transition-colors">
                         5 razões para você conhecer melhor o Pesquisa Ativa!
                     </h2>
@@ -119,7 +136,7 @@ function InfoSection() {
                             </div>
                         ))}
                     </div>
-                </div>
+                </motion.div>
             </div>
         </motion.main>
     );

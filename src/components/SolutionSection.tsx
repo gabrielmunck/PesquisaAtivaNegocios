@@ -20,22 +20,19 @@ function SolutionSection() {
     ];
 
     return (
-        <motion.section
-            id="servicos"
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
-            className="py-20 px-4 bg-gray-100"
-        >
+        <section id="servicos" className="py-20 px-4 bg-gray-100">
             <p className="text-4xl text-center font-bold mb-20 tracking-wide">
                 Alguns de nossos serviços
             </p>
             <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {solutions.map((solution, index) => (
-                        <div
+                        <motion.div
                             key={index}
+                            initial={{ opacity: 0, x: 20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 1 }}
                             className="bg-white rounded-lg shadow-lg "
                         >
                             <h3 className="text-2xl text-center font-bold h-8 p-8 mb-12">
@@ -49,11 +46,11 @@ function SolutionSection() {
                                     Falar com Consultor
                                 </button>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
-        </motion.section>
+        </section>
     );
 }
 
