@@ -1,3 +1,4 @@
+import ContactSection from "./components/ContactSection"
 import HeroSection from "./components/HeroSection"
 import InfoSection from "./components/InfoSection"
 import LgpdSection from "./components/LgpdSection"
@@ -15,6 +16,7 @@ function App() {
         <InfoSection />
         <SolutionSection />
         <LgpdSection />
+        <ContactSection />
       </div>
     </>
   )
