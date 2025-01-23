@@ -1,31 +1,35 @@
 import { useState } from "react";
 
 function ContactSection() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formData, setFormData] = useState({
-      name: "",
-      email: "",
-      tel: "",
-      message: "",
-  });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        tel: "",
+        message: "",
+    });
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        if (!formData.name || !formData.email || !formData.tel || !formData.message) {
-          alert('Por favor preencha todos os campos');
-          return;
-      }
+        if (
+            !formData.name ||
+            !formData.email ||
+            !formData.tel ||
+            !formData.message
+        ) {
+            alert("Por favor preencha todos os campos");
+            return;
+        }
     };
 
     return (
-        <section className="w-full py-16 bg-white">
+        <section id="contato" className="w-full py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div className="hidden bg-blue-600 md:flex flex-col rounded-lg">
-                    <div className="flex justify-center items-center h-[100px]">
-                    <span
-                                className="text-2xl uppercase font-bold text-white tracking-[0.5em]"
-                            > Consulte Grátis
-                            </span>
+                    <div className="flex justify-center items-center w-full h-[100px]">
+                        <span className="text-xl lg:text-2xl uppercase font-bold text-white tracking-[0.3em] lg:tracking-[0.5em]">
+                            Consulte Grátis
+                        </span>
                     </div>
                     <img
                         src="/pcForms.jpg"
@@ -113,7 +117,7 @@ function ContactSection() {
                             type="submit"
                             className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300"
                         >
-                            {isSubmitting ? 'Enviando...' : 'Enviar'}
+                            {isSubmitting ? "Enviando..." : "Enviar"}
                         </button>
                     </form>
                 </div>

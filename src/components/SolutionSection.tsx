@@ -15,17 +15,17 @@ function SolutionSection() {
   ]
 
   return (
-    <section className="py-20 px-4 bg-gray-100">
+    <section id="servicos" className="py-20 px-4 bg-gray-100">
 
       <p className="text-4xl text-center font-bold mb-20 tracking-wide">Alguns de nossos serviços</p>
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {solutions.map((solution, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg ">
-              <h3 className="text-2xl text-center font-bold h-8 m-8">{solution.title}</h3>
+              <h3 className="text-2xl text-center font-bold h-8 p-8 mb-12">{solution.title}</h3>
               <p className="text-gray-600 text-xl px-10">{solution.description}</p>
-            <div className="text-center py-12">
-              <button className="bg-purple-600 text-white text-xl px-8 py-4 rounded-full font-semibold hover:bg-purple-700 transition-colors">
+            <div className="text-center px-4 py-12">
+              <button className="bg-purple-600 text-white text-xl px-5 py-2 lg:px-8 lg:py-4 rounded-full font-semibold hover:bg-purple-700 transition-colors">
                 Falar com Consultor
               </button>
             </div>

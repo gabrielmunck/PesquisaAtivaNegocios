@@ -4,9 +4,9 @@ function HeroSection() {
     };
 
     return (
-        <main className="bg-gradient-to-r from-blue-600 to-blue-800 min-h-[600px]">
+        <main id="home" className="bg-gradient-to-r from-blue-600 to-blue-800 min-h-[600px]">
             <div className="max-w-7xl mx-auto">
-                <article className="flex flex-col md:flex-row py-20 gap-2">
+                <article className="flex flex-col md:flex-row py-28 gap-2">
                     <div className="flex flex-col w-full md:w-[80%] justify-center items-center space-y-8 px-4 sm:px-6 lg:px-8">
                         <h3 className="text-4xl md:text-7xl font-bold text-white leading-snug">
                             Descubra por que o Pesquisa Ativa está
@@ -33,7 +33,7 @@ function HeroSection() {
                                 </button>
                             </div>
                     </div>
-                    <div className="hidden md:flex md:flex-1 w-full md:w-[10%] ">
+                    <div className="hidden lg:flex md:flex-1 w-full md:w-[10%] ">
                         <img
                             src="/stock.svg"
                             alt="Stock graph visualization"

@@ -1,8 +1,8 @@
 function InfoSection() {
     return (
-        <main className="relative">
+        <main id="sobre" className="relative">
             <div className="absolute w-full h-[800px] bg-gradient-to-r from-blue-600 to-blue-800 clip-path-triangle -z-10"></div>
-            <div className="flex w-full justify-center sha bg-gradient-to-r from-blue-600 to-blue-800 p-8 ">
+            <div className="flex w-full justify-center bg-gradient-to-r from-blue-600 to-blue-800 p-8 ">
                 <h2 className="text-white font-bold tracking-wider text-3xl md:text-5xl text-center leading-tight relative">
                     Entenda mais sobre a pesquisa ativa
                     <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-40 h-1 bg-white rounded-full"></span>
