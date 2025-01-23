@@ -1,50 +1,69 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Pesquisa Ativa Negócios
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Criado por : Gabriel A. Munck P. da Cruz
+Landing page moderna desenvolvida para apresentar serviços de pesquisa ativa para negócios, utilizando as mais recentes tecnologias web.
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React 18
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Vite
 
-- Configure the top-level `parserOptions` property like this:
+## ✨ Funcionalidades
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Design responsivo
+- Animações suaves com Framer Motion
+- Formulário de contato
+- Navegação suave entre seções
+- Interface moderna e intuitiva
+- Gradientes e efeitos visuais personalizados
+
+## 🛠️ Instalação
+
+1. Clone o repositório
+
+```bash
+git clone https://github.com/seu-usuario/ativa8.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Instale as dependências
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+3. Inicie o servidor de desenvolvimento
+
+```bash
+npm run dev
+```
+
+📦 Scripts Disponíveis
+
+- npm run dev: Inicia o servidor de desenvolvimento
+- npm run build: Gera a versão de produção
+- npm run preview: Visualiza a versão de produção localmente
+- npm run lint: Executa a verificação de código
+
+
+🎨 Estilização
+
+O projeto utiliza Tailwind CSS para estilização, oferecendo:
+
+- Sistema de design consistente
+- Responsividade
+- Customização através de classes utilitárias
+- Animações e transições
+- Gradientes personalizados
+
+ ## 📱 Dispositivos Compatíveis
+ O projeto foi desenvolvido para ser compatível com os seguintes dispositivos:
+ 
+- Dispositivos móveis
+- Tablets
+- Desktops
+- Telas maiores
