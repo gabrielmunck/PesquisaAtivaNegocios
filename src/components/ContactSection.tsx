@@ -9,7 +9,7 @@ function ContactSection() {
         message: "",
     });
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         if (
             !formData.name ||
@@ -19,6 +19,19 @@ function ContactSection() {
         ) {
             alert("Por favor preencha todos os campos");
             return;
+        }
+        
+        setIsSubmitting(true);
+        try {
+            // Simulando uma resposta de sucesso após 2 segundos
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            // Sucesso
+            alert("Formulário enviado com sucesso!");
+        } catch (error) {
+            // Erro
+            alert("Erro ao enviar o formulário. Por favor, tente novamente.");
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
@@ -116,6 +129,7 @@ function ContactSection() {
                         <button
                             type="submit"
                             className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300"
+                            disabled={isSubmitting}
                         >
                             {isSubmitting ? "Enviando..." : "Enviar"}
                         </button>
