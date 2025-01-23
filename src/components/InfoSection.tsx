@@ -1,6 +1,15 @@
+import { motion } from "framer-motion";
+
 function InfoSection() {
     return (
-        <main id="sobre" className="relative">
+        <motion.main
+            id="sobre"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="relative"
+        >
             <div className="absolute w-full h-[800px] bg-gradient-to-r from-blue-600 to-blue-800 clip-path-triangle -z-10"></div>
             <div className="flex w-full justify-center bg-gradient-to-r from-blue-600 to-blue-800 p-8 ">
                 <h2 className="text-white font-bold tracking-wider text-3xl md:text-5xl text-center leading-tight relative">
@@ -112,7 +121,7 @@ function InfoSection() {
                     </div>
                 </div>
             </div>
-        </main>
+        </motion.main>
     );
 }
 

@@ -1,10 +1,19 @@
+import { motion } from "framer-motion";
+
 function HeroSection() {
     const handleConsultClick = () => {
         window.open("https://www.linkedin.com/in/gabrielmunck/", "_blank");
     };
 
     return (
-        <main id="home" className="bg-gradient-to-r from-blue-600 to-blue-800 min-h-[600px]">
+        <motion.main
+            id="home"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="bg-gradient-to-r from-blue-600 to-blue-800 min-h-[600px]"
+        >
             <div className="max-w-7xl mx-auto">
                 <article className="flex flex-col md:flex-row py-28 gap-2">
                     <div className="flex flex-col w-full md:w-[80%] justify-center items-center space-y-8 px-4 sm:px-6 lg:px-8">
@@ -20,18 +29,17 @@ function HeroSection() {
                                 rapidez e assertividade para impulsionar suas
                                 decisões estratégicas.
                             </p>
-
                         </section>
-                            <div className="flex justify-center md:justify-start items-center w-full h-28">
-                                <button
-                                    onClick={handleConsultClick}
-                                    className="bg-white text-blue-600 px-8 py-8 rounded-full font-semibold 
+                        <div className="flex justify-center md:justify-start items-center w-full h-28">
+                            <button
+                                onClick={handleConsultClick}
+                                className="bg-white text-blue-600 px-8 py-8 rounded-full font-semibold 
                                             text-xl hover:bg-blue-800 hover:text-white transition-colors duration-300 
                                             shadow-lg hover:shadow-xl"
-                                >
-                                    Consulte de graça aqui!
-                                </button>
-                            </div>
+                            >
+                                Consulte de graça aqui!
+                            </button>
+                        </div>
                     </div>
                     <div className="hidden lg:flex md:flex-1 w-full md:w-[10%] ">
                         <img
@@ -42,7 +50,7 @@ function HeroSection() {
                     </div>
                 </article>
             </div>
-        </main>
+        </motion.main>
     );
 }
 
