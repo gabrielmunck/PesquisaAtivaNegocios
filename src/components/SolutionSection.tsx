@@ -42,9 +42,11 @@ function SolutionSection() {
                                 {solution.description}
                             </p>
                             <div className="text-center px-4 py-12">
-                                <button className="bg-purple-600 text-white text-xl px-5 py-2 lg:px-8 lg:py-4 rounded-full font-semibold hover:bg-purple-700 transition-colors">
-                                    Falar com Consultor
-                                </button>
+                                <a href="#contato">
+                                    <button className="bg-purple-600 text-white text-xl px-5 py-2 lg:px-8 lg:py-4 rounded-full font-semibold hover:bg-purple-700 transition-colors">
+                                        Falar com Consultor
+                                    </button>
+                                </a>
                             </div>
                         </motion.div>
                     ))}
