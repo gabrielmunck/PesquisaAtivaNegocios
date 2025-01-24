@@ -40,16 +40,16 @@ function Header() {
                             alt="Stock Logo"
                             className="h-10 w-10 mr-1 brightness-0 invert"
                         />
-                        <span className="ml-2 text-white font-bold text-xl">
+                        <span className="ml-2 text-white font-bold select-none text-xl">
                             Pesquisa Ativa Negócios
                         </span>
                     </div>
 
                     <div className="hidden md:flex space-x-8">
-                        <a href="#home" className="text-white hover:text-gray-200">Sobre</a>
-                        <a href="#sobre" className="text-white hover:text-gray-200">Benefícios</a>
-                        <a href="#servicos" className="text-white hover:text-gray-200">Soluções</a>
-                        <a href="#contato" className="text-white hover:text-gray-200">Contato</a>
+                        <a href="#home" className="text-white hover:text-gray-200 select-none cursor-pointer">Sobre</a>
+                        <a href="#sobre" className="text-white hover:text-gray-200 select-none cursor-pointer">Benefícios</a>
+                        <a href="#servicos" className="text-white hover:text-gray-200 select-none cursor-pointer">Soluções</a>
+                        <a href="#contato" className="text-white hover:text-gray-200 select-none cursor-pointer">Contato</a>
                     </div>
 
                     <button 

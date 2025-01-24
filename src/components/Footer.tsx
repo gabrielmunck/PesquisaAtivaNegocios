@@ -11,20 +11,20 @@ function Footer() {
                             alt="Stock Logo"
                             className="h-8 w-8 mr-1 brightness-0 invert"
                         />
-                        <span className="ml-2 font-bold text-lg">
+                        <span className="ml-2 font-bold text-lg select-none">
                             Pesquisa Ativa Negócios
                         </span>
                     </div>
                     
                     <div className="flex flex-col md:flex-row md:space-x-8 items-center">
-                        <a href="#home" className="hover:text-gray-200 mb-2 md:mb-0">Sobre</a>
-                        <a href="#sobre" className="hover:text-gray-200 mb-2 md:mb-0">Benefícios</a>
-                        <a href="#servicos" className="hover:text-gray-200 mb-2 md:mb-0">Soluções</a>
-                        <a href="#contato" className="hover:text-gray-200">Contato</a>
+                        <a href="#home" className="hover:text-gray-200 mb-2 md:mb-0 select-none cursor-pointer">Sobre</a>
+                        <a href="#sobre" className="hover:text-gray-200 mb-2 md:mb-0 select-none cursor-pointer">Benefícios</a>
+                        <a href="#servicos" className="hover:text-gray-200 mb-2 md:mb-0 select-none cursor-pointer">Soluções</a>
+                        <a href="#contato" className="hover:text-gray-200 select-none cursor-pointer">Contato</a>
                     </div>
                 </div>
                 
-                <div className="mt-8 text-center text-sm text-gray-300">
+                <div className="mt-8 text-center text-sm text-gray-300 select-none">
                     <p>© 2025 Pesquisa Ativa Negócios. Todos os direitos reservados.</p>
                 </div>
             </div>
